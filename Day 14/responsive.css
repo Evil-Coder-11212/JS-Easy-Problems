@@ -1,0 +1,25 @@
+@media screen and (max-width: 780px) {
+    .main-content {
+        background-color: red;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    .input-container>input {
+        margin: 15px 0;
+    }
+
+    /* NTH CHILD */
+    .input-container>input:nth-child(1) {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .input-container>input {
+        width: 80%;
+    }
+}
