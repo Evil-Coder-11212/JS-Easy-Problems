@@ -10,6 +10,6 @@ const celiacToFerrite = (num1) =>{
     return total;
 }
 
-// Calling Functions
+// Calling Function
 console.log(ferriteToCeliac(0));
 console.log(celiacToFerrite(0));
