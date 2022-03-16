@@ -1,0 +1,104 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+:root {
+  --primary-color: rgb(26, 26, 26);
+  --secondary-color: rgb(245, 245, 245);
+  --font-famiyl: Nunito, sans-serif;
+  --box-shadow: rgb(0 0 0) 1px 1px 3px 0px inset,
+    rgb(48 48 48 / 50%) -1px -1px 3px 1px inset;
+  --all-transition: transform ease-in-out 0.3s 0s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-famiyl);
+}
+
+.main-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  width: 85%;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.inputs-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.inputs-container > input {
+  box-shadow: var(--box-shadow);
+  width: 200px;
+  border: none;
+  height: 25px;
+  padding: 15px;
+  color: var(--secondary-color);
+  border-radius: 15px;
+  background-color: var(--primary-color);
+}
+
+.container > p {
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  transition: var(--all-transition);
+}
+
+.container > button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+  box-shadow: var(--box-shadow);
+  width: 190px;
+  height: 33px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: var(--all-transition);
+}
+
+/* NTH CHILD */
+.inputs-container > input::placeholder {
+  color: var(--secondary-color);
+}
+
+/* Animations */
+.container > button:hover {
+  transform: scale(1.08);
+}
+
+.container > button:active {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  box-shadow: none;
+  border: 1px solid var(--secondary-color);
+}
+
+.container > p:hover {
+  transform: scale(1.3);
+}
